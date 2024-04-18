@@ -85,7 +85,7 @@ app.get('/players/:playerId/', async (request, response) => {
     where
       player_id=1;`
   const playerList = await db.all(getWithId)
-  response.send('playerList')
+  response.send(playerList)
 })
 
 //API4
